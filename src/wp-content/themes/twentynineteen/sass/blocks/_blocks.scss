@@ -89,6 +89,24 @@
 	}
 }
 
+.entry-content > p > img {
+
+	&.alignright {
+			/*rtl:ignore*/
+			float: right;
+			max-width: calc(5 * (100vw / 12));
+			margin-top: 0;
+			margin-right: 0;
+			/*rtl:ignore*/
+			margin-left: $size__spacing-unit;
+
+			@include media(desktop) {
+				position: absolute;
+				left: calc(7.5 * (100vw / 12));
+			}
+		}
+}
+
 .entry .entry-content > *,
 .entry .entry-summary > * {
 
